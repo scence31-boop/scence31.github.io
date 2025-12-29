@@ -1,6 +1,6 @@
 ---
 title: "[Oracle] DML(CRUD), TCL"
-date: 2025-12-29 18:00:00 +0900
+date: 2025-12-29 17:30:00 +0900
 categories: [Database, Oracle]
 tags: [sql, oracle, dml, crud, tcl]
 ---
