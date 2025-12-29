@@ -16,7 +16,7 @@ timezone:
 
 title: 이정민 | Developer Portfolio # the main title
 
-tagline: 성장을 기록하는 이정민의 개발 블로그입니다. # it will display as the subtitle
+tagline: 이정민의 성장을 기록하는 개발 블로그입니다. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
