@@ -23,3 +23,17 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
+
+# Eclipse/Java 관련 무시 설정
+.metadata/
+.plugins/
+bin/
+*.class
+.settings/
+.project
+.classpath
+
+# 캐시 및 임시 파일
+EBWebView/
+*.log
+*.old
