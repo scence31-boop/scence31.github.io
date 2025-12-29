@@ -17,7 +17,6 @@ tags: [java, collection, framework, list, set, map]
 컬렉션은 크게 `List`, `Set`, `Map` 세 가지 인터페이스로 나뉨
 
 
-
 ### 1. List (순서 O, 중복 O)
 - 가장 배열과 비슷하게 쓰이며, 데이터를 일렬로 나열한 구조
 - **종류**: `ArrayList` 등
