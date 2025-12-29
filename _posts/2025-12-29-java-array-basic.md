@@ -3,6 +3,7 @@ title: "[Java] 배열(Array)"
 date: 2025-12-29 14:00:00 +0900
 categories: [Backend, Java]
 tags: [java, array, copy]
+---
 
 ## 📌 1. 배열의 의미와 선언
 데이터가 많아지면 변수를 일일이 만들기 힘들어지죠. 이때 같은 타입의 값들을 묶어서 관리하는 게 **배열**입니다.
@@ -15,7 +16,6 @@ tags: [java, array, copy]
 
 > **💡 핵심**: 인덱스는 항상 **0**부터 시작한다는 점! `arr[3]`을 호출하면 `ArrayIndexOutOfBoundsException` 에러를 만나게 되니 주의해야 해요.
 
----
 
 ## 📌 2. 배열을 왜 쓸까?
 단순히 "편해서"라기보다 효율성 때문입니다. 
