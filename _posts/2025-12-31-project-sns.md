@@ -63,6 +63,7 @@ public static BCryptPasswordEncoder bCryptPasswordEncoder() {
 ```
 
 2. **이메일 SMTP**: 회원가입 및 계정 찾기 시 인증
+
 ```ini
 # SMTP 서버 설정
 spring.mail.host=smtp.gmail.com
@@ -83,6 +84,7 @@ spring.mail.properties.mail.smtp.starttls.required=true
 ```
 
 3. **JWT(JSON Web Token)**: 사용자 정보를 담은 토큰을 발급해 세션 없이도 인증 상태 유지
+
 ```ini
 # 로그인 jwt 설정
 jwt.secret=Hello123KHAcademy456Dangsan789WelcomeToDClass
