@@ -36,7 +36,7 @@ tags: [project, react, STS]
 | **API / Lib** | `Kakao Maps API`, `JWT (JSON Web Token)` |
 | **Tools** | `GitHub`, `VS Code`, `STS` |
 
-<img src="/assets/img/project_intro_architecture_draw.io.png" width="50%">
+<img src="/assets/img/project_intro_architecture_draw.io.png" width="50%" alt="시스템 아키텍처 다이어그램">
 
 <h2 id="auth-implementation">로그인/회원가입 구현</h2>
 (여기에 내용 작성...)
