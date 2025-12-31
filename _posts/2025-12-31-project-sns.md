@@ -5,8 +5,11 @@ categories: [Project]
 tags: [project, react, STS]
 ---
 
-## 프로젝트 개요 {#프로젝트-개요}
-## JWT 로그인/회원가입 구현 {#jwt-로그인회원가입-구현}
-## 카카오 지도 API 연동 {#카카오-지도-api-연동}
-## 인스타그램 스타일 스토리 기능 {#인스타그랩-스타일-스토리-기능}
-## 트러블슈팅 및 회고 {#트러블슈팅-및-회고}
+## 목차
+1. [프로젝트 개요](#project-summary)
+2. [로그인/회원가입 구현](#auth-implementation)
+3. [카카오 지도 API 연동](#kakao-map-api)
+4. [스토리 기능 구현](#story-feature)
+5. [트러블슈팅 및 회고](#troubleshooting)
+
+---
