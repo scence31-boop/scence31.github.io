@@ -13,3 +13,18 @@ tags: [project, react, STS]
 5. [트러블슈팅 및 회고](#troubleshooting)
 
 ---
+
+## 프로젝트 개요 {: #project-summary }
+(여기에 내용 작성...)
+
+## 로그인/회원가입 구현 {: #auth-implementation }
+(여기에 내용 작성...)
+
+## 카카오 지도 API 연동 {: #kakao-map-api }
+(여기에 내용 작성...)
+
+## 스토리 기능 구현 {: #story-feature }
+(여기에 내용 작성...)
+
+## 트러블슈팅 및 회고 {: #troubleshooting }
+(여기에 내용 작성...)
