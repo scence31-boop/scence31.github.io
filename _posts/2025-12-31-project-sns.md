@@ -97,6 +97,7 @@ jwt.expiration=3600000
 @Component
 public class JwtAuthFilter extends OncePerRequestFilter {
 
+    // application.properties 파일에서 가져오기
     @Value("${jwt.secret}")
     private String secretKey;
 
@@ -145,6 +146,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
             // 5. SecurityContext에 인증 객체 등록 (정상 토큰인 경우)
             if (StringUtils.hasText(memberId) && SecurityContextHolder.getContext().getAuthentication() == null) {
+
                 UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
                         memberId, null, List.of(new SimpleGrantedAuthority("ROLE_USER")));
                 
@@ -202,6 +204,24 @@ if(!memberId.matches("^[a-z0-9]{4,12}$")
 
 * **아이디 찾기**: 가입 시 등록한 이름과 이메일 정보를 DB와 대조하여 일치할 경우 제공합니다.
 * **비밀번호 재설정**: 본인 인증(이메일 등) 후 BCryptPasswordEncoder를 통해 안전하게 재설정할 수 있습니다.
+
+
+### JWT 인증 고찰
+
+`JwtAuthFilter`를 구현하며 스프링 시큐리티의 동작 원리와 보안 흐름을 이해할 수 있었습니다.
+
+#### 1. 코드 사용 이유
+* **OncePerRequestFilter**: 사용자의 한 번의 요청에 대해 딱 한 번만 실행되도록 보장하여, 불필요한 중복 인증을 방지하고 자원 효율성을 높였습니다.
+* **Bearer**: HTTP 인증 표준인 `Bearer` 스키마를 준수하여 토큰의 타입을 명확히 구분하고, 헤더를 통해 안전하게 인증 정보를 전달했습니다.
+
+
+#### 2. 인증 처리의 4단계 메커니즘
+
+1. **필터링**: 로그인, 회원가입, 정적 리소스 등 토큰 검사가 필요 없는 공용 경로를 사전에 구분하기
+2. **추출**: 클라이언트가 보낸 HTTP 헤더에서 JWT 토큰을 안전하게 꺼내기
+3. **검증**: 서버만 알고 있는 Secret Key를 이용해 토큰의 위변조 여부 및 만료 시간을 체크하기
+4. **등록**: 검증이 완료된 사용자를 `SecurityContext`에 인증된 사용자로 등록하여, 서비스 전체에서 로그인 정보를 활용하기
+
 
 <h2 id="kakao-map-api">카카오 지도 API 연동</h2>
 (여기에 내용 작성...)
