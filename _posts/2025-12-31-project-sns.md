@@ -278,6 +278,8 @@ public String loginMember(Login login) {
 
 <h2 id="kakao-map-api">카카오 지도 API 연동</h2>
 
+<img src="/assets/img/project_sns_map_api.png" width="50%" alt="kakaoMap">
+
 ### 준비(App Key 발급)
 1. **[카카오 디벨로퍼스](https://developers.kakao.com/)** 접속
 2. **내 애플리케이션** 생성
@@ -293,6 +295,72 @@ public String loginMember(Login login) {
 </script>
 <div id="map" style="width:100%; height:400px;"></div>
 ```
+
+### 주요 코드
+1. **로딩 지연 해결(재귀함수 사용)**: `setTimeout`으로 스크립트 로드 후 `kakao`객체 접근하기
+
+```javascript
+// 로딩 타이밍 안전 처리
+const wait = () => {
+
+  // kakao 객체와 필요한 라이브러리가 모두 로드되었는지 체크
+  if (window.kakao && window.kakao.maps && window.kakao.maps.services) {
+
+    init(); // 로드 완료 시 지도 초기화 실행
+
+  } else {
+
+    setTimeout(wait, 50); // 로드 안 됐으면 50ms 후 다시 시도
+  }
+};
+
+wait();
+```
+
+2. **외부 객체 관리**: `useRef`는 값이 변해도 렌더링에 영향을 주지 않으면서 객체 유지함.(State와 달리 값이 변해도 재렌더링하지 않음)
+
+```javascript
+// 지도, 마커, 검색 서비스 객체를 담을 참조 변수
+const mapRef = useRef(null);
+const markerRef = useRef(null);
+const placesRef = useRef(null);
+
+// 초기화 시 ref에 객체 할당 (재렌더링 시에도 지도 객체 유지)
+mapRef.current = new window.kakao.maps.Map(container, options);
+markerRef.current = new window.kakao.maps.Marker({ position: center });
+placesRef.current = new window.kakao.maps.services.Places();
+```
+
+3. **장소 선택 및 데이터 처리**: 사용자가 검색 결과를 골랐을 때 지도 이동과 데이터 처리를 동시에 수행
+
+```javascript
+const handlePickPlace = (p) => {
+  const pos = new window.kakao.maps.LatLng(Number(p.y), Number(p.x));
+
+  // 지도 중심 이동 및 마커 위치 변경 - 시각적 처리
+  mapRef.current.setCenter(pos);
+  markerRef.current.setPosition(pos);
+
+  // 부모 컴포넌트로 선택된 장소의 상세 정보 전달 - 데이터 처리
+  if (onSelect) {
+    onSelect({
+      latitude: Number(p.y),
+      longitude: Number(p.x),
+      placeName: p.place_name,
+      addressName: p.address_name,
+      // 필요한 정보만 선별해서 전달
+    });
+  }
+};
+```
+
+### 카카오지도 API 연동 고찰
+`KakaoLocationPicker` 컴포넌트를 구현하여 외부 라이브러리를 React 인터페이스와 통합하는 최적의 방법을 익힐 수 있었습니다.
+
+#### 1. 주요 기술 적용 이유
+* **
+
+
 
 
 <h2 id="troubleshooting">트러블슈팅 및 회고</h2>
