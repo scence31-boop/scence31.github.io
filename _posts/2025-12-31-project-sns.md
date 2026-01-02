@@ -46,6 +46,18 @@ tags: [project, react, STS]
 * **Data Base(Oracle)**: 모든 데이터를 관리 및 저장합니다.
 * **API(Kakao Map)**: 서버로부터 지도 데이터를 요청받아 사용자(클라이언트)에게 시각화합니다.
 
+### ERD Cloud
+
+<img src="/assets/img/project_sns_erd.png" width="50%" alt="erd cloud">
+
+
+### Use Case Diagram
+
+<img src="/assets/img/project_sns_useCase.png" width="50%" alt="useCase">
+
+
+---
+
 <h2 id="auth-implementation">로그인/회원가입</h2>
 
 **JWT(JSON Web Token) 인증 방식**
