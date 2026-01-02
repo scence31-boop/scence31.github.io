@@ -60,7 +60,7 @@ tags: [project, react, STS]
 <h2 id="auth-implementation">로그인/회원가입</h2>
 
 <img src="/assets/img/project_sns_login.png" width="50%" alt="login">
-<img src="/assets/img/project_sns_signup" width="50%" alt="signup">
+<img src="/assets/img/project_sns_signup.png" width="50%" alt="signup">
 <img src="/assets/img/project_sns_findPwd.png" width="50%" alt="findPwd">
 
 **JWT(JSON Web Token) 인증 방식**
