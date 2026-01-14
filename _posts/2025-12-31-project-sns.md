@@ -26,7 +26,6 @@ tags: [project, react, STS]
 * **담당기능**
 1. 로그인 및 회원가입 - JWT, LocalStorage 활용한 보안 중심
 2. 지도 API 연동 - 카카오지도를 활용한 위치 지정
-3. 스토리 - React Framework 활용한 게시물
 
 | 분류 | 기술 스택 (Tech Stack) |
 | :--- | :--- |
