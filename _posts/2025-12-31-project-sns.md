@@ -3,6 +3,7 @@ title: "[Project] SNS 서비스 - React & STS 활용"
 date: 2025-12-31 10:00:00 +0900
 categories: [Project]
 tags: [project, react, STS]
+pin: true
 ---
 
 ## 목차
