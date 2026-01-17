@@ -16,18 +16,6 @@ DOM(Document Object Model)은 브라우저가 HTML 문서를 트리 구조로 �
 
 
 
-### jQuery
-JavaScript 문법을 편리하게 사용할 수 있게 해주는 라이브러리로, React 보다는 JSP에서 DOM 조작과 Ajax 통신 시 주로 사용함
-
-| 구분 | JavaScript | jQuery |
-| :--- | :--- | :--- |
-| **요소 선택** | `document.querySelector('#btn')` | `$('#btn')` |
-| **텍스트 변경** | `.textContent = '안녕'` | `.text('안녕')` |
-| **이벤트 처리** | `.addEventListener('click', ...)` | `.on('click', ...)` |
-| **스타일 변경** | `.style.display = 'none'` | `.hide()` |
-
-- **이벤트 위임:** 동적인 요소에 이벤트를 걸 때 `$(document).on('click', '.target', function() { ... })` 형식을 사용해서 한번에 관리 가능함!
-
 ### ES6+ 최신 문법
 리액트처럼 현대적인 프레임워크 사용할 때 필요함
 
@@ -47,3 +35,16 @@ JavaScript 문법을 편리하게 사용할 수 있게 해주는 라이브러리
 | **재할당** | O | O | X |
 | **전역 객체** | window에 등록 | X | X |
 | **실무 사용** | X 지양 | O | O (기본) |
+
+
+### jQuery
+JavaScript 문법을 편리하게 사용할 수 있게 해주는 라이브러리로, React 보다는 JSP에서 DOM 조작과 Ajax 통신 시 주로 사용함
+
+| 구분 | JavaScript | jQuery |
+| :--- | :--- | :--- |
+| **요소 선택** | `document.querySelector('#btn')` | `$('#btn')` |
+| **텍스트 변경** | `.textContent = '안녕'` | `.text('안녕')` |
+| **이벤트 처리** | `.addEventListener('click', ...)` | `.on('click', ...)` |
+| **스타일 변경** | `.style.display = 'none'` | `.hide()` |
+
+- **이벤트 위임:** 동적인 요소에 이벤트를 걸 때 `$(document).on('click', '.target', function() { ... })` 형식을 사용해서 한번에 관리 가능함!
