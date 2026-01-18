@@ -30,8 +30,6 @@ HTML 요소는 사각형의 박스 형태다
 행 또는 열을 기준으로 요소를 배치하는 1차원 방식
 - **`display: flex;`**: 부모 요소를 기준으로 잡음
 - **`justify-content`**: 기준 방향 정렬 (center)
-- **`align-items`**: 교차축 방향 정렬 (center, flex-end)
-- **`flex-direction`**: 배치 방향 설정 (row)
 
 
 
