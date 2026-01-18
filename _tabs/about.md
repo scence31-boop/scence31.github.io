@@ -14,17 +14,17 @@ order: 1
   - 비전공자로 시작하여 6개월간의 노력으로 가장 높은 성취도를 기록했습니다.
 <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
   <div style="text-align: center;">
-    <img src="/assets/img/award.jpg" width="300px" title="성적향상상" alt="성적향상상">
+    <img src="/assets/img/award.jpg" width="250px" title="성적향상상" alt="성적향상상">
     <p><small>Academic Achievement Award</small></p>
   </div>
   
   <div style="text-align: center;">
-    <img src="/assets/img/certification_completion.png" width="300px" title="수료증" alt="수료증">
+    <img src="/assets/img/certification_completion.png" width="250px" title="수료증" alt="수료증">
     <p><small>Certificate of Completion</small></p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/assets/img/certification_training.png" width="300px" title="이수증" alt="이수증">
+    <img src="/assets/img/certification_training.png" width="250px" title="이수증" alt="이수증">
     <p><small>Certificate of Training</small></p>
   </div>
 </div>
