@@ -1,6 +1,6 @@
 ---
 title: "[Error] HTTP 상태 코드"
-date: 2026-01-16 22:00:00 +0900
+date: 2026-01-17 22:00:00 +0900
 categories: [Error]
 tags: [error, http, network, status-code, debugging]
 ---
