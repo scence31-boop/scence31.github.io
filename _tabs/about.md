@@ -14,21 +14,21 @@ order: 1
   - 비전공자로 시작하여 6개월간의 노력으로 가장 높은 성취도를 기록했습니다.
 <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; align-items: flex-start;">
   
-  <div style="text-align: center; width: 300px;">
+  <div style="text-align: center; width: 250px;">
     <img src="/assets/img/award.jpg" 
          style="width: 100%; height: 380px; object-fit: contain; border: 1px solid #eee;" 
          title="성적향상상" alt="성적향상상">
     <p style="margin-top: 10px;"><small>Academic Achievement Award</small></p>
   </div>
   
-  <div style="text-align: center; width: 300px;">
+  <div style="text-align: center; width: 250px;">
     <img src="/assets/img/certification_completion.png" 
          style="width: 100%; height: 380px; object-fit: contain; border: 1px solid #eee;" 
          title="수료증" alt="수료증">
     <p style="margin-top: 10px;"><small>Certificate of Completion</small></p>
   </div>
 
-  <div style="text-align: center; width: 300px;">
+  <div style="text-align: center; width: 250px;">
     <img src="/assets/img/certification_training.png" 
          style="width: 100%; height: 380px; object-fit: contain; border: 1px solid #eee;" 
          title="이수증" alt="이수증">
