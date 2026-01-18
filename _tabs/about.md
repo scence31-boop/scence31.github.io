@@ -13,7 +13,7 @@ order: 1
 - **[2026.01] 교육 이수 후 성적향상상 수상**
   - 비전공자로 시작하여 6개월간의 노력으로 가장 높은 성취도를 기록했습니다.
 <div align="center">
-    <img src="/assets/img/award.jpg" width="600px" title="성적향상상 상장" alt="성적향상상">
+    <img src="/assets/img/award.jpg" width="450px" title="성적향상상 상장" alt="성적향상상">
 </div>
 
 ## 🛠 Tech Stacks
